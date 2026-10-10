@@ -15,7 +15,7 @@ export default function ProductScene() {
 
   useEffect(() => {
     scene.background = new Color(background);
-  }, [background]);
+  }, [background, scene]);
 
   return (
     <>
