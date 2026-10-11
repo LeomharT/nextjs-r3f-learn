@@ -5,9 +5,9 @@ import ProductEffect from './ProductEffect';
 import ProductEnvironment from './ProductEnvironment';
 import ProductScene from './ProductScene';
 
-// Register the THREE namespace as native JSX elements.
+// @ts-expect-error Register the THREE namespace as native JSX elements.
 // See below for notes on tree-shaking
-extend(THREE as any);
+extend(THREE);
 
 export default function ProductCanvas() {
   return (
@@ -15,7 +15,7 @@ export default function ProductCanvas() {
       shadows
       style={{ touchAction: 'none' }}
       gl={{ toneMapping: THREE.ACESFilmicToneMapping, toneMappingExposure: 3 }}
-      scene={{ background: new THREE.Color('#e6e7ef') }}
+      scene={{ background: new THREE.Color('#e6e7ef').convertSRGBToLinear() }}
     >
       <ProductEnvironment />
       <ProductEffect />
