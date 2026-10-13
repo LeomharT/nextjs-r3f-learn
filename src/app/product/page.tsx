@@ -1,4 +1,4 @@
-import ProductCanvas from './components/ProductCanvas';
+import ProductCanvas from './_components/ProductCanvas';
 
 export default function Product() {
   return (

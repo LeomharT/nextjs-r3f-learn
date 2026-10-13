@@ -1,14 +1,14 @@
 import { Text } from '@react-three/drei';
 export default function ProductTitle() {
   return (
-    <group position-y={3.5} position-z={-2}>
-      <Text fontSize={3} textAlign='center'>
+    <group position-y={2.1} position-z={-1}>
+      <Text fontSize={4} textAlign='center'>
         Orsus
         <meshBasicMaterial color={[1.2, 1.2, 1.2]} toneMapped={false} />
       </Text>
       <Text
-        position-x={1.7}
-        position-y={0.8}
+        position-x={4.5}
+        position-y={1.2}
         fontSize={0.24}
         textAlign='center'
         anchorX={'left'}

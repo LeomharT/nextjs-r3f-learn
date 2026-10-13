@@ -1,7 +1,7 @@
 export default function ProductEnvironment() {
   return (
     <>
-      <ambientLight />
+      <ambientLight intensity={2} />
     </>
   );
 }
