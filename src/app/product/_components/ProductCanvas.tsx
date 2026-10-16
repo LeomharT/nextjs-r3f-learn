@@ -1,4 +1,5 @@
 'use client';
+import { CameraControls } from '@react-three/drei';
 import { Canvas, extend } from '@react-three/fiber';
 import * as THREE from 'three';
 import ProductEffect from './ProductEffect';
@@ -17,6 +18,7 @@ export default function ProductCanvas() {
       gl={{ toneMapping: THREE.ACESFilmicToneMapping, toneMappingExposure: 3 }}
       scene={{ background: new THREE.Color('#e6e7ef').convertSRGBToLinear() }}
     >
+      <CameraControls makeDefault dolly={true} />
       <ProductEnvironment />
       <ProductEffect />
       <ProductScene />

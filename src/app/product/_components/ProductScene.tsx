@@ -1,4 +1,3 @@
-import { PresentationControls } from '@react-three/drei';
 import { useControls } from 'leva';
 import { Suspense } from 'react';
 import Floor from './Floor';
@@ -16,7 +15,7 @@ export default function ProductScene() {
       <Suspense>
         <ProductTitle />
         <group position-y={-1.2}>
-          <PresentationControls
+          {/* <PresentationControls
             global
             zoom={1.25}
             speed={3}
@@ -24,10 +23,10 @@ export default function ProductScene() {
             rotation={[0, Math.PI / 2, 0]}
             polar={[0, Math.PI / 3]}
             azimuth={[-Math.PI / 1.4, Math.PI / 2]}
-          >
-            <Orsus />
-            <Floor />
-          </PresentationControls>
+          > */}
+          <Orsus />
+          <Floor />
+          {/* </PresentationControls> */}
         </group>
       </Suspense>
     </>
